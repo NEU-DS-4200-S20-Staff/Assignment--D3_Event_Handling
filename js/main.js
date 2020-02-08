@@ -1,5 +1,5 @@
 // write your javascript code here.
-// feel free to change the preset attributes as you see fit
+// feel free to change the pre-set attributes as you see fit
 
 let margin = {
     top: 60,
@@ -12,8 +12,8 @@ let margin = {
 
 let svg = d3.select('#vis1')
   .append("svg")
-  .attr("preserveAspectRatio", "xMidYMid meet") // this will scale your visualization according to the size of the page.
-  .style('background-color', '#ccc') // change the background color to white
+  .attr('preserveAspectRatio', 'xMidYMid meet') // this will scale your visualization according to the size of its parent element and the page.
+  .style('background-color', '#ccc')
   .attr("viewBox", [0, 0, width + margin.left + margin.right, height + margin.top + margin.bottom].join(' '))
 
 text = svg.append('text')
@@ -28,14 +28,14 @@ text = svg.append('text')
   .attr('text-anchor', 'middle')
   .text('B')
 
-rect = svg.append('rect')
+rect = svg.append('rect')// The square we want to click on
   .attr('x', '20%')
   .attr('y', '40%')
   .attr('width', '20%')
   .attr('height', '20%')
   .attr('fill', 'yellow')
 
-circle = svg.append('circle')
+circle = svg.append('circle') // The circle we want to change color when the square is clicked
   .attr('cx', '70%')
   .attr('cy', '50%')
   .attr('r', '10%')
