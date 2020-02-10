@@ -11,11 +11,11 @@ let margin = {
   height = 500 - margin.top - margin.bottom;
 
 let svg = d3.select('#vis1')
-  .append("svg")
+  .append('svg')
   .attr('preserveAspectRatio', 'xMidYMid meet') // this will scale your visualization according to the size of its parent element and the page.
   .attr('width', '100%') // this is now required by Chrome to ensure the SVG shows up at all
   .style('background-color', '#ccc')
-  .attr("viewBox", [0, 0, width + margin.left + margin.right, height + margin.top + margin.bottom].join(' '))
+  .attr('viewBox', [0, 0, width + margin.left + margin.right, height + margin.top + margin.bottom].join(' '))
 
 text = svg.append('text')
   .attr('x', '30%')
