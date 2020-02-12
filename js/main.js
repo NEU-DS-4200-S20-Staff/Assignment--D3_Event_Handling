@@ -41,3 +41,13 @@ circle = svg.append('circle') // The circle we want to change color when the squ
   .attr('cy', '50%')
   .attr('r', '10%')
   .attr('fill', 'blue')
+
+
+// Here, you'll have to use the d3.dispatch library to: 
+//    - create a dispatch when the square is clicked (by adding to the click listener in the square)
+//    - receive that dispatch and change the color of the circle
+// YOUR CODE HERE
+
+rect.on('click', function() {
+  console.log("rect clicked");
+})
