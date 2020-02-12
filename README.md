@@ -168,28 +168,3 @@ We can also use [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScrip
 
 Note that we can use [ES6 Arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions).
 E.g., instead of writing `function(d){ return d.name; }` we write `d => d.name` or `d => { return d.name; }`. We would use the latter version with surrounding `{...}` when we need multiple lines of code vs. just a simple expression.
-
-## Template Repository Setup (For Instructors Only)
-
-### GitHub Pages
-
-It is necessary if using GitHub Classroom to set up GitHub pages for the students, as they do not have admin permissions on their repository. To do this, we need to create and move everything to the `gh-pages` branch and delete the `master` branch.
-
-1. Commit the files to the `master` branch on GitHub.
-
-1. `git branch gh-pages`
-
-1. `git checkout gh-pages`
-
-1. `git branch -D master`
-
-1. `git push origin gh-pages`
-
-1. On GitHub, go to `Settings`->`Branches` and set the default branch to `gh-pages`.
-
-1. `git push origin :master`
-
-### Template Repository
-
-1. On GitHub, go to `Settings` and check the box for `Template repository` at the top. This makes GitHub Classroom copies much faster.
-
